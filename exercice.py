@@ -16,6 +16,7 @@ def main():
 	print(foo[0, 0])
 	print(foo[0, 2])
 	print(foo.data)
+	print(foo.__repr__())
 
 	print("-" * 40)
 
@@ -32,7 +33,7 @@ def main():
 		1.1, 1.2, 1.3,
 		2.1, 2.2, 2.3
 	])
-	print(format(foo, "5.2f"))
+	print(format(foo, "5.10f"))
 
 	print("-" * 40)
 
@@ -71,6 +72,8 @@ def main():
 	print(foo * bar)
 	print()
 	print(foo * 10)
+	print()
+	print(foo != bar)
 
 if __name__ == "__main__":
 	main()
